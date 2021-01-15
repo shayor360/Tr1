@@ -1,0 +1,282 @@
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */
+}
+
+.cover{
+    position:fixed;  
+    box-sizing: border-box;
+    width:100%;
+    background-color:pink;
+    box-shadow:0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);     
+}  
+  
+ul{
+    list-style-type: none;
+}
+
+.navigation-bar{
+    display:flex;
+    justify-content: space-between;
+    list-style: none; 
+    padding:2% 4% 2% 4%;
+}
+
+.jumbo{display:flex;
+    justify-content: space-between;
+}
+
+ .middle ul{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+
+.nav-children ul{
+    display:flex;
+    align-items:center;
+    list-style:none;
+}
+
+li{
+    padding-left:90px ;
+} 
+
+.banner-image{
+    overflow: hidden;
+    box-sizing:border-box;
+    /* width:100%; */
+    height:calc(100vh - 8rem);
+    align-items: center;
+    padding: 9em; 
+    background-image:url(https://images.ctfassets.net/rux5p7gfeb44/6ka587IfNW6UDTnfXmLNdb/d7ae2a7d9c7187e31bd5f5366ab743b6/banner.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat:no-repeat;
+}
+
+.banner-image p{
+    padding-top:3%;
+    font-size:1.2em;
+    line-height: 1.5;
+    color:white;
+}
+
+.banner-image h1{
+    font-size:3.5em;
+    color:white;
+    text-transform: uppercase;
+}
+
+.today{
+    padding:5% 5% 5% 5%;
+}
+
+ul a{
+    text-transform: capitalize;
+    text-decoration:none;
+    color:grey;
+}
+
+ul a:hover{
+    color:black;
+    text-decoration:underline;
+}
+
+.drive-ride{
+    display:flex;
+    justify-content: space-between;
+    padding:4% 0 1% 0;
+}
+
+.driving-with-us{
+    display:flex;
+    justify-content: space-between;
+    box-sizing:border-box;
+    padding-top:10%;
+    line-height: .9;
+}
+.driving-with-us p{
+    padding-top:2%;
+    color:grey;
+    line-height:1.2;
+    padding-bottom: 5%;
+}
+
+.driving-with-us .driven button{
+    margin-top:5%;
+    padding:2% 5%;
+    border:none;
+    border-radius:5%;
+    font-weight: bold;
+    color:white;
+    background-color:green;
+}
+
+.driving-image{
+    box-sizing:border-box;
+    flex:1;
+}
+
+.driving-image img{
+    height:20em;
+    width:100%;
+}
+
+.mapped-background{
+    height:calc(10vh - 2rem);
+    align-items: center;
+    padding: 5em 5% 0 5%;; 
+    background-image:url(https://www.tr1pp.com/assets/images/home/map.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat:no-repeat; 
+}
+
+.map h1{
+    padding:3% 0 0 0;
+    font-family:Tahoma;
+    font-size:1.2em;
+    text-align: center;
+}
+
+.update{
+    padding:5% 5% 5% 5%;
+}
+
+.stay-updated-partnership h2{
+    font-size:2.5em;
+    font-family: monospace;
+    font-weight:bold;
+    text-transform: capitalize;
+    padding-bottom:1%;
+}
+
+.partnership-products-events section{
+    display:flex;
+    justify-content: space-between;
+    padding-top:5%;
+}
+
+.partnership-products-events section h3{
+    font-size: 1.5em;
+    text-transform: capitalize;
+    padding-bottom:5%;
+}
+
+.partnership-products-events section p{
+    color:slategray;
+}
+
+.two-symbol_update .wheel{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.wheel img{
+    height:2.5em;
+    padding-bottom:1.5em;
+}
+
+footer{
+    background-color: rgb(10, 10, 10);
+    padding:5% 5% 0 5%;
+    color:rgb(255, 255, 255);
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.tr1pp-footer h4{
+    padding-bottom:3%;
+}
+
+.tr1pp-footer .ride-for-business{
+    display:flex;
+    justify-content: space-between;
+    padding-top:5%;
+    padding-bottom:5%;
+}
+
+.tr1pp-footer .ride-for-business li{
+    padding-left:0;
+    padding-top:1.5em;
+}
+
+.tr1pp-footer .ride-for-business .rider article{
+    padding-top:3.5em;
+}
+
+.tr1pp-footer .ride-for-business .business{
+    padding-top:1.5;
+    padding-right:25%;
+}
+
+
+/* .driving-with-us button{
+    padding:.9% 3%;
+    border:none;
+    border-radius:5.9%;
+    font-weight: bold;
+    color:white;
+    background-color:green;
+} */
+
+/* .driven{
+    display:flex;
+    justify-content: space-between;
+} */
+/* .body-work{
+    /* width:100%; */
+    /* padding:0 5% 0 5%;
+}
+
+
+
+
+
+.driving-with-us button:hover{
+    background-color:rgb(189, 224, 201);
+}
+
+.driving-image{
+    box-sizing: border-box;
+    width:20%;
+}
+
+.driving-image img{
+   
+    height:4%;
+    width:8em;
+} */ 
+
+
+@media (max-width:600px){
+    *{
+        margin:0;
+    }
+   .today .drive-ride{
+       display:grid;
+   }
+
+   .body-work .stay-updated-partnership .partnership-products-events section{
+       display:grid;
+       font-size:1em;
+   }
+
+   .body-work .stay-updated-partnership .partnership-products-events section div{
+       padding:5%;
+   }
+
+   footer .tr1pp-footer .ride-for-business{
+       display:grid;
+   }
+
+   footer .tr1pp-footer .ride-for-business .business{
+       padding-top:3.5em;
+       padding-bottom:3.5em;
+   }
+
+}
